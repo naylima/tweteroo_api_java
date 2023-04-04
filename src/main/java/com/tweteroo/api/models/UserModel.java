@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class User {
+public class UserModel {
 
-  public User(UserDTO data) {
+  public UserModel(UserDTO data) {
     this.username = data.username();
     this.avatar = data.avatar();
   }
@@ -27,6 +27,6 @@ public class User {
   @Column(length = 20, nullable = false)
   private String username;
 
-  @Column(nullable = false)
+  @Column(length = 200, nullable = false)
   private String avatar;
 }

@@ -13,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Tweet {
+public class TweetModel {
 
-  public Tweet(TweetDTO data) {
+  public TweetModel(TweetDTO data, String avatar) {
     this.username = data.username();
-    this.avatar = data.avatar();
+    this.avatar = avatar;
     this.text = data.text();
   }
 
