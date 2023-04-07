@@ -1,4 +1,4 @@
-package com.tweteroo.api.repository;
+package com.tweteroo.api.repositories;
 
 import java.util.List;
 

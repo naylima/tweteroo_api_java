@@ -18,7 +18,7 @@ public class TweetModel {
   public TweetModel(TweetDTO data, String avatar) {
     this.username = data.username();
     this.avatar = avatar;
-    this.text = data.text();
+    this.tweet = data.tweet();
   }
 
   @Id
@@ -32,5 +32,5 @@ public class TweetModel {
   private String avatar;
 
   @Column(length = 280, nullable = false)
-  private String text;  
+  private String tweet;  
 }

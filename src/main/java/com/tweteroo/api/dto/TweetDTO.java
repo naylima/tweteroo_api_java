@@ -7,7 +7,7 @@ public record TweetDTO(
   String username, 
 
   @NotBlank
-  String text
+  String tweet
   ) {  
 
 }
